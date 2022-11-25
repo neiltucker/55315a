@@ -12,7 +12,7 @@ $WorkFolder = 'C:\Labfiles.55315\'
 $LabFilesFolder = 'C:\Labfiles.55315\'
 New-Item -Path $WorkFolder -Type Directory -Force
 $DesktopPath = [System.Environment]::GetFolderPath([System.Environment+SpecialFolder]::Desktop)
-Invoke-WebRequest -Uri https://raw.githubusercontent.com/neiltucker/ccc/master/55315A-ENU_PowerShellSetup.zip -OutFile $DesktopPath"55315A-ENU_PowerShellSetup.zip"
+Invoke-WebRequest -Uri https://raw.githubusercontent.com/neiltucker/55315a/master/55315A-ENU_PowerShellSetup.zip -OutFile $DesktopPath"55315A-ENU_PowerShellSetup.zip"
 Copy-Item $DesktopPath"\55315A-ENU_PowerShellSetup.zip" $WorkFolder"55315A-ENU_PowerShellSetup.zip"
 
 # Configure Remote Settings
